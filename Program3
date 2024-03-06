@@ -1,0 +1,39 @@
+//Write a java program which will throw an exception
+// error for an AGE field if we pass age below 25 and above 55.
+package Assignments.Problem3;
+
+public class MyException extends Exception {
+
+    public MyException(String s)
+    {
+        super(s);
+    }
+
+    public void getAge(int ag) throws MyException {
+        try {
+            if (ag <= 25) {
+                throw new MyException("Age is eqaul or below 25. Invalid age entered ");
+            }
+            if (ag >=55)
+            {
+                throw new MyException("Age is equal or above 55. Invalid age entered ");
+            }
+            else {
+                System.out.println("Valid age entered: "+ag);
+            }
+        }
+        catch(Exception e)
+            {
+                System.out.println("Exception Caught");
+                System.out.println(e.getMessage());
+            }
+    }
+
+    public static void main(String[] args) throws MyException {
+        MyException ex = new MyException("Exception handling");
+        ex.getAge(24);
+        ex.getAge(56);
+        ex.getAge(28);
+    }
+
+}
