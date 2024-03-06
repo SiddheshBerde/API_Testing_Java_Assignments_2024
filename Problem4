@@ -1,0 +1,68 @@
+//Write a function which accepts 3 parameters. 2 integers and 1 String. If String parameter is 'add'
+// then it would add two integers. Similarly 'subs'/'multiplication'/'division'.
+
+package Assignments.Problem4;
+
+import java.util.Scanner;
+
+public class Problem4 {
+
+    int num1,num2,result;
+    String option;
+    public void getData(int num11,int num22,String opt)
+    {
+        num1=num11;
+        num2=num22;
+        option=opt;
+        if(option.equals("add"))
+        {
+            result=num1+num2;
+        }
+        else if(option.equals("subtract"))
+        {
+            result=num1-num2;
+        }
+        else if (option.equals("multiply"))
+        {
+            result=num1*num2;
+        }
+        else if(option.equals("divide"))
+        {
+            try
+            {
+                result=num1/num2;
+            }
+            catch (Exception e)
+            {
+                System.out.println("Exception Caught");
+                e.getMessage();
+            }
+        }
+        else
+        {
+            System.out.println("Invalid option entered:"+option);
+        }
+
+
+    }
+
+       public void showData()
+    {
+        System.out.println("Option selected: "+ option +" num1:"+num1+" num2:"+num2+ " result is :"+ result);
+    }
+
+    public static void main(String[] args) {
+
+        Problem4 p4 = new Problem4();
+        p4.getData(10,20,"add");
+        p4.showData();
+        p4.getData(20,30,"multiply");
+        p4.showData();
+        p4.getData(40,8,"divide");
+        p4.showData();
+        p4.getData(50,25,"subtract");
+        p4.showData();
+        p4.getData(50,25,"power");
+
+    }
+}
