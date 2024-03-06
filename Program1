@@ -1,3 +1,5 @@
+//Write a java program to add two float numbers like 8.6 and 9.7
+
 package Assignments;
 
 public class Problem1 {
