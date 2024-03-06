@@ -1,0 +1,36 @@
+package Assignments.Problem2;
+
+public class B {
+
+    public int classAVariable=10;
+    public int var2=20;
+    public B(int a)
+    {
+        classAVariable=a;
+    }
+
+    public void print()
+    {
+        System.out.println("Value of variable"+classAVariable);
+    }
+}
+
+package Assignments.Problem2;
+
+public class A extends B {
+
+    public A(int i) {
+        super(i);
+        var2=i;
+    }
+
+
+
+   public static void main(String[] args) {
+        A resetVariable = new A(20);
+        //resetVariable.B(20);
+        System.out.println("Value of 'class  B Variable1:'"+ resetVariable.classAVariable);
+       System.out.println("Value of Class B variable 2:"+ resetVariable.var2);
+
+    }
+}
