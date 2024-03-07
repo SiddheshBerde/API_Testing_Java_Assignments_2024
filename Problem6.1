@@ -1,0 +1,32 @@
+//Write a program where create an int type arraylist object. 
+// Then add 200 to 500 numbers into the ArrayList then Print the ArrayList.
+package Problem6;
+
+import java.util.ArrayList;
+
+public class Program6 {
+
+    ArrayList<Integer> numb = new ArrayList<Integer>();
+    public void addNumbers()
+    {
+        for (int i = 0; i <=300 ; i++) {
+            
+            numb.add(i+200);
+            
+        }
+    }
+    
+    public void printNumbers()
+    {
+        for (int i = 0; i <=300 ; i++) {
+
+            System.out.println(numb.get(i));
+        }
+    }
+
+    public static void main(String[] args) {
+        Program6 p6 =new Program6();
+        p6.addNumbers();
+        p6.printNumbers();
+    }
+}
