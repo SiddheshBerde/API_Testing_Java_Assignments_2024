@@ -1,0 +1,12 @@
+//Print only 12345 from below string
+//"ABCDE12345"
+package Assignments.Problem9;
+
+public class Program9 {
+    public static void main(String[] args) {
+        String str="ABCDE12345";
+
+        System.out.println(str.substring(str.indexOf("1")));
+
+    }
+}
