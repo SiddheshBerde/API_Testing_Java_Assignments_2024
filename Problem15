@@ -1,0 +1,37 @@
+//Write a java program to create a random AlphaNumeric number and Retun it as a String
+package Assignments.Problem15;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class Program15 {
+
+    static String[] str1 = new String[101];
+    static public void assignText()
+    {
+        for (int i = 0; i < 100 ; i++) {
+
+            str1[i]="somePick"+i;
+        }
+    }
+
+    static public String getRandom()
+    {
+        DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("SS");
+        LocalDateTime now1 = LocalDateTime.now();
+        int ins = Integer.parseInt(dtf1.format(now1));
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MMSSmm");
+        LocalDateTime now = LocalDateTime.now();
+        String str = dtf.format(now);
+
+        String data=str1[ins];
+        return str+"Capta"+data;
+    }
+
+    public static void main(String[] args) {
+
+        assignText();
+        System.out.println(getRandom());
+
+    }
+}
