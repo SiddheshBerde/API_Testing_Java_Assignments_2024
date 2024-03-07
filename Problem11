@@ -1,0 +1,42 @@
+//If EmpNo=123 then EmpName=Jadeja. Like this how can we keep 100 EmpName with its EmpId? 
+package Assignments.Problem11;
+
+public class Program111 {
+
+    static String[][] empDetails= new String[201][201];
+
+    public static void getData()
+    {
+        for (int i = 100; i <= 200 ; i++) {
+            int j=i;
+            String empid = Integer.toString(j);
+            String name = "Jadeja"+j;
+            int k=1;
+            int l=0;
+            empDetails[i][l]=empid;
+            empDetails[i][k]=name;
+
+
+
+       }
+    }
+
+    public static void DisplayData()
+    {
+        for (int i = 100; i <= 200; i++) {
+            int k=1;
+            int l=0;
+            System.out.println("EmpID: " +empDetails[i][l]);
+            System.out.println("Emp Name: "+ empDetails[i][k]);
+        }
+    }
+
+    public static void main(String[] args) {
+
+        getData();
+        DisplayData();
+
+        //printing details of emp ID 123
+        System.out.println("Emp ID : " + empDetails[123][0] + " Emp Name : "+ empDetails[123][1].substring(0,empDetails[123][1].indexOf("1")));
+    }
+}
