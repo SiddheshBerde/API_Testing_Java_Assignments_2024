@@ -1,0 +1,41 @@
+//Write a program where create an int type HashSet  object.
+// Then add 200 to 500 numbers into the HashSet  then Print the ArrayList.
+package Problem6;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class Program6_2_Hashset {
+
+
+    static HashSet<Integer> hash = new HashSet<>();
+    public static void addNumbers()
+    {
+        for (int i = 0; i <=300 ; i++) {
+
+            hash.add(i+200);
+
+        }
+    }
+
+    public static void printNumbers()
+    {
+        Iterator<Integer> i = hash.iterator();
+        while (i.hasNext())
+
+            // Iterating over elements
+            // using next() method
+            System.out.println(i.next());
+    }
+
+    public static void main(String[] args) {
+
+        addNumbers();
+        printNumbers();
+
+    }
+}
+
+
+
