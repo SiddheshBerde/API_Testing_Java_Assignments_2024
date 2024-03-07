@@ -1,0 +1,31 @@
+//Write a program to print 100 numbers using,
+//While loop and
+//For loop
+package Assignments.Problem12;
+
+public class Program12 {
+
+    public void printforloop()
+    {
+        System.out.println("Printing for loop");
+        for (int i = 1; i <=100 ; i++) {
+            System.out.println(i);
+        }
+    }
+    public void printWhileLoop()
+    {
+        int i=1;
+        System.out.println("Printing while loop");
+        while (i<=100)
+        {
+            System.out.println(i);
+            i++;
+        }
+    }
+
+    public static void main(String[] args) {
+        Program12 p12=new Program12();
+        p12.printforloop();
+        p12.printWhileLoop();
+    }
+}
