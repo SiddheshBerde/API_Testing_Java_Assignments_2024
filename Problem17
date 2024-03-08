@@ -1,0 +1,19 @@
+//Write a program to print even or odd number using if condition
+
+package Assignments.Problem17;
+
+public class Program17 {
+
+    public static void main(String[] args) {
+        for (int i = 0; i < 100; i++) {
+            if(i%2==0)
+            {
+                System.out.println(i+" Even number");
+            }
+            else
+            {
+                System.out.println(i+" Odd number");
+            }
+        }
+    }
+}
