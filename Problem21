@@ -1,0 +1,19 @@
+//Original name from “Liverpool” to “Liverpool Football Club”
+//Original name from “City” to “Manchester City”
+package Assignments.Problem21;
+
+public class Program21 {
+
+     public String getString(String name, String replaceMe, String replaceBy)
+    {
+        String result = name.replace(replaceMe,replaceBy);
+        return result;
+    }
+
+    public static void main(String[] args) {
+        Program21 pg21=new Program21();
+
+        System.out.println("Actual String: Liverpool replaced by: "+pg21.getString("Liverpool","Liverpool", "Liverpool Football Club"));
+        System.out.println("Actual String City replaced by: "+ pg21.getString("City", "City", "Manchester City"));
+    }
+}
