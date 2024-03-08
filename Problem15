@@ -10,8 +10,28 @@ public class Program15 {
     static public void assignText()
     {
         for (int i = 0; i < 100 ; i++) {
-
-            str1[i]="somePick"+i;
+            if (i>=0 && i<=10) {
+                str1[i] = "somePick" + i;
+            }
+            if (i>=11 && i<=40) {
+                str1[i] = "AwesomePick" + i;
+            }
+            if (i>=41 && i<=50)
+            {
+                str1[i] = "SuperPick" + i;
+            }
+            if (i>=51 && i<=70)
+            {
+                str1[i] = "GreaterPick" + i;
+            }
+            if (i>=71 && i<=80)
+            {
+                str1[i] = "SuperDuperPick" + i;
+            }
+            if (i>=81 && i<=100)
+            {
+                str1[i] = "WowPick" + i;
+            }
         }
     }
 
