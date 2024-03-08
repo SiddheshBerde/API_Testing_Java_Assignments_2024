@@ -1,0 +1,29 @@
+//Write a program to print “Narendra Modi” to - (Use appropriate String methods)
+//UpperCase & the LowerCase
+package Assignments.Problem22;
+
+import java.util.Arrays;
+
+public class Program22 {
+
+    static String fullname = "narendra modi";
+
+    static public void printName()
+    {
+        String[] str = fullname.split(" ");
+        String name = str[0]; //First name
+        String lastName = str[1]; //Last Name
+
+        String res = name.substring(0,1).toUpperCase()+name.substring(1);
+        String res1 = lastName.substring(0,1).toUpperCase()+lastName.substring(1);
+
+        String finalResult = res+" "+res1;
+        System.out.println(fullname);
+        System.out.println(finalResult);
+    }
+
+    public static void main(String[] args) {
+
+        printName();
+    }
+}
