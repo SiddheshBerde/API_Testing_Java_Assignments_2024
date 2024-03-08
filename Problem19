@@ -1,0 +1,30 @@
+//Correct the spelling mistake from “Davi Beckham” to “David Beckham”
+//Correct the number of goals scored by Lionel Messi from 400 to 579
+package Assignments.Problem19;
+
+public class Program19 {
+
+    String name1 = "Davi Beckham";
+    String name2 = "Goals scored by Lionel Messi 400";
+
+    public String CorrectName()
+    {
+        String name = name1.replace("Davi", "David");
+
+        return name;
+    }
+    public String correctGoal()
+    {
+        String name22=name2.replace("400","579");
+        return name22;
+    }
+
+    public static void main(String[] args) {
+        Program19 p19 = new Program19();
+        System.out.println("Actual String:" + p19.name1);
+        System.out.println("After correction: "+ p19.CorrectName());
+        System.out.println("Actual String:" + p19.name2);
+        System.out.println("After correction: "+ p19.correctGoal());
+
+    }
+}
