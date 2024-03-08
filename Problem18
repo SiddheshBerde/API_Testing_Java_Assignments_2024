@@ -1,0 +1,21 @@
+//Only First name from “Sachin Tendulkar”
+//Only Second name from “Rahul Dravid”
+package Assignments.Problem18;
+
+public class Program18 {
+
+    static String firstName="Sachin Tendulkar";
+    static String SecondName="Rahul Dravid";
+
+    static public void getName()
+    {
+        String first=firstName.substring(0,firstName.indexOf(" "));
+        System.out.println("First name from string:" +firstName+": "+first);
+        String last=SecondName.substring(SecondName.indexOf(" "));
+        System.out.println("Second name from String: "+SecondName+": "+last);
+    }
+
+    public static void main(String[] args) {
+        getName();
+    }
+}
